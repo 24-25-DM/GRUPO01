@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Placa" />
+
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Marca" />
+
+        <TextView
+            android:id="@+id/etFechaFabricacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"
+            android:gravity="center_vertical"
+            android:hint="dd/MM/yyyy"
+            android:padding="10dp"
+            android:text="Seleccione la fecha de fabricación: "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnShowDatePicker"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="mostrar calendario" />
+
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="selecciona un color" />
+
+
+        <EditText
+            android:id="@+id/etCosto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Costo" />
+
+        <Switch
+            android:id="@+id/cbActivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Activo" />
+
+        <Button
+            android:id="@+id/btnGuardarVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnEliminarVehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Eliminar"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
