@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagenVehiculo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_vehicle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/placa"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Placa (AAA-0000)"
+                android:inputType="text"
+                android:maxLength="8"  />
+
+            <TextView
+                android:id="@+id/marca"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Marca" />
+
+            <TextView
+                android:id="@+id/fechaFabricacion"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:hint="Fecha de Fabricación (DD/MM/AAAA)"
+                android:focusable="false"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Color" />
+
+            <TextView
+                android:id="@+id/costo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Costo"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/activo"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Activo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnEditar"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:drawableBottom="@drawable/edit_va"
+                    android:text="Editar" />
+
+                <Button
+                    android:id="@+id/btnEliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/borrar_va"
+                    android:text="Eliminar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
